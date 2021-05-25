@@ -1,8 +1,8 @@
 const fs = require('fs')
 
-const content = process.argv[2];
+const content = process.argv[3];
 
-fs.writeFile('./test.txt', content, err => {
+fs.writeFile(`./${process.argv[2]}}`, content, err => {
   if (err) {
     console.error(err)
     return
